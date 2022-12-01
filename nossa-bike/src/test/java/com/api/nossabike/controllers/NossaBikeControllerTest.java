@@ -1,11 +1,8 @@
 package com.api.nossabike.controllers;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -31,8 +28,8 @@ class NossaBikeControllerTest {
     }
 
     @Test
-    void getRoot() {
-        assertEquals("Olá mundo.", bikeController.getRoot());
+    void Ola() {
+        assertEquals("Olá mundo.", bikeController.Ola());
     }
 
     //iniciando
