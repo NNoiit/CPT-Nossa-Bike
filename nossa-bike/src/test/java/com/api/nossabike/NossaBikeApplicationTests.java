@@ -7,7 +7,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 class NossaBikeApplicationTests {
 
 	@Test
-	void contextLoads() {
+	void main() {
+		NossaBikeApplication.main(new String[] {});
 	}
 
 }
