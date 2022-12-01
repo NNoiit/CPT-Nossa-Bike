@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="10.5.0">
+<file name="C:\Users\Noits\OneDrive\Documentos\GitHub\CPT-Nossa-Bike\nossa-bike\src\main\java\com\api\nossabike\config\SwaggerConfig.java">
+<error line="8" column="25" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - com.api.nossabike.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="C:\Users\Noits\OneDrive\Documentos\GitHub\CPT-Nossa-Bike\nossa-bike\src\main\java\com\api\nossabike\controllers\Nossa_bike_controller.java">
+<error line="6" column="47" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - org.springframework.web.bind.annotation.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="7" column="25" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - com.api.nossabike.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="12" column="38" severity="error" message="&apos;3600&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="22" column="27" severity="error" message="Parameter palavra should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+</file>
+<file name="C:\Users\Noits\OneDrive\Documentos\GitHub\CPT-Nossa-Bike\nossa-bike\src\main\java\com\api\nossabike\NossaBikeApplication.java">
+<error line="9" column="33" severity="error" message="Parameter args should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+</file>
+<file name="C:\Users\Noits\OneDrive\Documentos\GitHub\CPT-Nossa-Bike\nossa-bike\src\main\java\com\api\nossabike\services\Swapi.java">
+<error line="27" column="25" severity="error" message="Parameter name should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="35" column="36" severity="error" message="Parameter rotation_period should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="43" column="35" severity="error" message="Parameter orbital_period should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="51" column="29" severity="error" message="Parameter diameter should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="59" column="28" severity="error" message="Parameter climate should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="67" column="28" severity="error" message="Parameter gravity should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="75" column="28" severity="error" message="Parameter terrain should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="83" column="34" severity="error" message="Parameter surface_water should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="91" column="31" severity="error" message="Parameter population should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="99" column="30" severity="error" message="Parameter residents should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="107" column="26" severity="error" message="Parameter films should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="115" column="28" severity="error" message="Parameter created should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="123" column="27" severity="error" message="Parameter edited should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="131" column="24" severity="error" message="Parameter url should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+</file>
+<file name="C:\Users\Noits\OneDrive\Documentos\GitHub\CPT-Nossa-Bike\nossa-bike\src\main\java\com\api\nossabike\services\SwapiClient.java">
+<error line="14" column="33" severity="error" message="Parameter id should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="15" column="15" severity="error" message="Variable &apos;swapi&apos; should be declared final." source="com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"/>
+</file>
+<file name="C:\Users\Noits\OneDrive\Documentos\GitHub\CPT-Nossa-Bike\nossa-bike\src\main\resources\application.properties">
+</file>
+</checkstyle>
