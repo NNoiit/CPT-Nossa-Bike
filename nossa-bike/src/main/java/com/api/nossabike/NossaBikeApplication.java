@@ -8,6 +8,7 @@ public class NossaBikeApplication {
 
   public static void main(String[] args) {
     SpringApplication.run(NossaBikeApplication.class, args);
+    //teste de deploy para sonar
   }
 
 }
