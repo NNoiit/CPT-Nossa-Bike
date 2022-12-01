@@ -25,7 +25,7 @@ public class NossaBikeController {
 
     @GetMapping("/")
     @ApiOperation(value = "Retorna Uma String")
-    public String Ola() {
+    public String ola() {
         return "Olá mundo.";
     }
 

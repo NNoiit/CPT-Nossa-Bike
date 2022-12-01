@@ -29,7 +29,7 @@ class NossaBikeControllerTest {
 
     @Test
     void Ola() {
-        assertEquals("Olá mundo.", bikeController.Ola());
+        assertEquals("Olá mundo.", bikeController.ola());
     }
 
     //iniciando
