@@ -1,15 +1,32 @@
 package com.api.nossabike.controllers;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+
+import com.api.nossabike.services.SwapiClient;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 
 @RestController
-@RequestMapping("/OlaMundo")
+@CrossOrigin(origins = "*", maxAge = 3600)
+@RequestMapping("/")
+@Api(value="Spring Boot REST API")
 public class NossaBikeController {
 
-  @GetMapping
-    public String ola(){
-    return "Olá, mundo";
-  }
+    @Autowired
+    private SwapiClient swapi;
+
+    @GetMapping("/{palavra}")
+    @ApiOperation(value = "Retorna repetição da palavra informada")
+    public String getEcho(@PathVariable(value = "palavra") String palavra) {
+        return palavra + " " + palavra + " " + palavra;
+    }
+
+    @GetMapping("/")
+    @ApiOperation(value = "Retorna Uma String")
+    public String Ola() {
+        return "Olá mundo.";
+    }
+
 }
