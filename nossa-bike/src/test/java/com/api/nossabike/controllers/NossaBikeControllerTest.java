@@ -24,7 +24,7 @@ class NossaBikeControllerTest {
     void getEcho() {
 
         String entrada = bikeController.getEcho(palavra);
-        assertEquals(palavra + " " + palavra + " " + palavra, entrada);
+        assertEquals(palavra + " " + palavra + " " + palavra + "eu sou um papagaio", entrada);
     }
 
     @Test
