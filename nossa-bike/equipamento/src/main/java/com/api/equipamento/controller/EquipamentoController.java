@@ -51,72 +51,40 @@ public class EquipamentoController {
         service.excluirBicicleta(id);
     }
 
-    @PutMapping("/bicicleta/{id}/status/{bicicleta}")
-    public Bicicleta putStatusBicicleta(@RequestBody String novoStatus, @PathVariable int id){
+    @PutMapping("/bicicleta/{id}/status/{acao}")
+    public Bicicleta putStatusBicicleta(@RequestBody String novoStatus, @PathVariable int id. @PathVariable String acao){
 
         Bicicleta bc = bicicleta.findById(id);
 
         bc.setStatus(novoStatus);
         return bicicleta.save(bc);
-    }
-
-    @GetMapping("/bicicleta/alugadaPor/{idCiclista}")
-    public Bicicleta getBicicletaAlugada(@PathVariable int idCiclista){
-
-        return bike;
     }
 
     //////////////////////////////////////////////////////
 
-@PostMapping("/tranca")
-    public Tranca postTranca(@RequestBody Tranca trc){
-        return tranca.save(trc);
+    @PostMapping("/tranca")
+    public ResponseEntity<?> postTranca(@RequestBody Tranca trc){
+        return service.cadastrarTranca(trc);
     }
 
     @GetMapping("/tranca")
-    public List<Tranca> getTranca(){
-        return tranca.findAll();
+    public ResponseEntity<?> getTranca(){
+        return service.listarTrancas();
     }
 
     @GetMapping("/tranca/{id}")
-    public Tranca getTranca(@PathVariable int id){
-
-        return tranca.findById(id);
+    public ResponseEntity<?> getTranca(@PathVariable int id){
+        return service.trancaFindId(id);
     }
 
     @PutMapping("/tranca/{id}")
-    public Tranca putTranca(@RequestBody Tranca trc, @PathVariable int id){
-
-        Tranca trcA = tranca.findById(id);
-
-        trcA.setNumero(trc.getNumero());
-        trcA.setLocalizacao(trc.getLocalizacao());
-        trcA.setAnoDeFabricacao(trc.getAnoDeFrabricacao());
-        trcA.setModelo(trc.getModelo());
-        trcA.setStatus(trc.getStatus());
-
-        return tranca.save(trcA);
+    public ResponseEntity<?> putTranca(@RequestBody Tranca trc, @PathVariable int id){
+        return service.alterarTranca(id);
     }
 
     @DeleteMapping("/tranca/{id}")
-    public void deleteBicicletaId(@PathVariable int id){
-        Tranca trc = tranca.findById(id);
-        tranca.delete(bc);
-    }
-
-    @PutMapping("/bicicleta/{id}/status/{bicicleta}")
-    public Bicicleta putStatusBicicleta(@RequestBody String novoStatus, @PathVariable int id){
-
-        Bicicleta bc = bicicleta.findById(id);
-
-        bc.setStatus(novoStatus);
-        return bicicleta.save(bc);
-    }
-
-    @GetMapping("/bicicleta/alugadaPor/{idCiclista}")
-    public Bicicleta getBicicletaAlugada(@PathVariable int idCiclista){
-
-        return bike;
+    public void deleteTrancaId(@PathVariable int id){
+        service.excluirTranca(id);
     }
 
 

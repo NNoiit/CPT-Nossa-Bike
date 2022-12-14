@@ -8,6 +8,9 @@ public class EquipamentoService{
     @Autowired
     private Repository bicicleta;
 
+    @Autowired
+    private RepTranca tranca;
+
 
     public ResponseEntity<?> cadastrar(Bicicleta bc){
 
@@ -50,11 +53,11 @@ public class EquipamentoService{
         }
         
 
-        bc.setMarca(bike.getMarca());
-        bc.setModelo(bike.getModelo());
-        bc.setAno(bike.getAno());
-        bc.setNumero(bike.getNumero());
-        bc.setStatus(bike.getStatus());
+        bc.setMarca(bicicleta.getMarca());
+        bc.setModelo(bicicleta.getModelo());
+        bc.setAno(bicicleta.getAno());
+        bc.setNumero(bicicleta.getNumero());
+        bc.setStatus(bicicleta.getStatus());
 
         mensage.setMensage("Dados atualizados");
         return new ResponseEntity<>(bicicleta.save(bc), HttpStatus.CREATED);
@@ -66,6 +69,67 @@ public class EquipamentoService{
 
         mensage.setMensage("Dados removidos");
         return new ResponseEntity<>(bicicleta.delete(bc), HttpStatus.DELETED);
+
+    }
+
+    ////////////////////  TRANCA  ////////////////////////////////
+
+    public ResponseEntity<?> cadastrarTranca(Tranca trc){
+
+        if(trc.getNumero.equals("")){
+            mensage.setMensage("Dados Inválidos");
+             return new ResponseEntity<>(mensage, HttpStatus.BAD_REQUEST);
+        }
+
+        mensage.setMensage("Dados cadastrados");
+        return new ResponseEntity<>(tranca.save(bc), HttpStatus.CREATED);
+    }
+
+    public ResponseEntity<?> listarTrancas(){
+        return new ResponseEntity<>(tranca.findAll(), HttpStatus.OK);
+    }
+
+    public ResponseEntity<?> trancaFindId( int id){
+        if(!tranca.findById(id)){
+            mensage.setMensage("Tranca não encontrada");
+            return new ResponseEntity<>(mensage, HttpStatus.NOT_FOUND);
+        }
+
+        mensage.setMensage("Tranca encontrada");
+        return new ResponseEntity<>(tranca.findById(id), HttpStatus.BAD_REQUEST);
+    }
+
+
+    public ResponseEntity<?> alterarTranca(int id){
+
+        if(tranca.findById(id)){
+            Tranca trc = tranca.findById(id);
+        } else {
+            return trancaFindId(id);
+        }
+
+        if(/*checar os dados*/){
+            mensage.setMensage("Dados Inválidos");
+            return new ResponseEntity<>(tranca.findById(id), HttpStatus.BAD_REQUEST);
+        }
+        
+
+        trc.setNumero(tranca.getNumero());
+        trc.setLocalizacao(tranca.getLocalizacao());
+        trc.setAnoDeFabricacao(tranca.getAnoDeFrabricacao());
+        trc.setModelo(tranca.getModelo());
+        trc.setStatus(traca.getStatus());
+
+        mensage.setMensage("Dados atualizados");
+        return new ResponseEntity<>(tranca.save(trc), HttpStatus.CREATED);
+    }
+
+    public ResponseEntity<?> excluirTranca(int id){
+
+        tranca.findById(id)? Tranca trc = tranca.findById(id):return trancaFindId(id);
+
+        mensage.setMensage("Dados removidos");
+        return new ResponseEntity<>(tranca.delete(trc), HttpStatus.DELETED);
 
     }
 }
