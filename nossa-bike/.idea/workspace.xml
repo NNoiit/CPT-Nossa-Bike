@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5ece845f-1c58-4aea-a287-fff66f26fbee" name="Changes" comment="diretorio equipamento movido para dentro de diretorio nossa bike">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IrPH16xEMEoW5ZuYEGXXHA7rdb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Noits/OneDrive/Documentos/Git/nossa-bike&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;6211e487ed889d1c22cc5584c15191d5&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="JUnit.NossaBikeApplicationTests">
+    <configuration name="NossaBikeApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nossa-bike" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.api.nossabike.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.api.nossabike" />
+      <option name="MAIN_CLASS_NAME" value="com.api.nossabike.NossaBikeApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NossaBikeApplicationTests.olaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nossa-bike" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.api.nossabike.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.api.nossabike" />
+      <option name="MAIN_CLASS_NAME" value="com.api.nossabike.NossaBikeApplicationTests" />
+      <option name="METHOD_NAME" value="olaTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NossaBikeApplicationTests.olaTestIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nossa-bike" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.api.nossabike.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.api.nossabike" />
+      <option name="MAIN_CLASS_NAME" value="com.api.nossabike.NossaBikeApplicationTests" />
+      <option name="METHOD_NAME" value="olaTestIT" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NossaBikeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="nossa-bike" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.api.nossabike.NossaBikeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.NossaBikeApplicationTests" />
+        <item itemvalue="JUnit.NossaBikeApplicationTests.olaTestIT" />
+        <item itemvalue="JUnit.NossaBikeApplicationTests.olaTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5ece845f-1c58-4aea-a287-fff66f26fbee" name="Changes" comment="" />
+      <created>1670936637284</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670936637284</updated>
+      <workItem from="1670936638502" duration="5241000" />
+      <workItem from="1670950467308" duration="34000" />
+      <workItem from="1670969207755" duration="63000" />
+      <workItem from="1670974497343" duration="227000" />
+      <workItem from="1670975601362" duration="12000" />
+      <workItem from="1670975743370" duration="18000" />
+    </task>
+    <task id="LOCAL-00001" summary="Retirada do checkstile do projeto">
+      <created>1670937839060</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670937839060</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Retirada do checkstile do projeto">
+      <created>1670938149104</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670938149104</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test de validação">
+      <created>1670938585522</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670938585522</updated>
+    </task>
+    <task id="LOCAL-00004" summary="diretorio equipamento movido para dentro de diretorio nossa bike">
+      <created>1670974547479</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670974547479</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Retirada do checkstile do projeto" />
+    <MESSAGE value="test de validação" />
+    <MESSAGE value="diretorio equipamento movido para dentro de diretorio nossa bike" />
+    <option name="LAST_COMMIT_MESSAGE" value="diretorio equipamento movido para dentro de diretorio nossa bike" />
+  </component>
+</project>
