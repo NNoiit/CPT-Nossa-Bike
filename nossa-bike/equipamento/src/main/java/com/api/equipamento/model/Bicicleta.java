@@ -8,7 +8,6 @@ public class Bicicleta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-   
     private String marca;
     private String modelo;
     private String ano;

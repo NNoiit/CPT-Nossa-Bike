@@ -17,45 +17,38 @@ public class EquipamentoController {
     @Autowired
     private RepTranca tranca;
 
+    @Autowired
+    private Service service;
+
     @GetMapping("/")
     public String getBicicletas(){
         return "Tudo normal por enquanto";
     }
 
     @PostMapping("/bicicleta")
-    public Bicicleta postBicicleta(@RequestBody Bicicleta bike){
-        return bicicleta.save(bike);
+    public ResponseEntity<?> postBicicleta(@RequestBody Bicicleta bike){
+        return service.cadastrar(bike);
     }
 
     @GetMapping("/bicicleta")
-    public List<Bicicleta> getBicicleta(){
-        return bicicleta.findAll();
+    public ResponseEntity<?> getBicicleta(){
+        return Service.listarBicicletas();
     }
 
     @GetMapping("/bicicleta/{id}")
-    public Bicicleta getBicicleta(@PathVariable int id){
+    public ResponseEntity<?> getBicicleta(@PathVariable int id){
 
-        return bicicleta.findById(id);
+        return service.bicicletaFindId(id);
     }
 
     @PutMapping("/bicicleta/{id}")
-    public Bicicleta putBicicleta(@RequestBody Bicicleta bike, @PathVariable int id){
-
-        Bicicleta bc = bicicleta.findById(id);
-
-        bc.setMarca(bike.getMarca());
-        bc.setModelo(bike.getModelo());
-        bc.setAno(bike.getAno());
-        bc.setNumero(bike.getNumero());
-        bc.setStatus(bike.getStatus());
-
-        return bicicleta.save(bc);
+    public ResponseEntity<?> putBicicleta(@RequestBody Bicicleta bike, @PathVariable int id){
+        return service.alterarBicicleta(id);
     }
 
     @DeleteMapping("/bicicleta/{id}")
     public void deleteBicicletaId(@PathVariable int id){
-        Bicicleta bc = bicicleta.findById(id);
-        bicicleta.delete(bc);
+        service.excluirBicicleta(id);
     }
 
     @PutMapping("/bicicleta/{id}/status/{bicicleta}")
@@ -72,7 +65,8 @@ public class EquipamentoController {
 
         return bike;
     }
-//////////////////////////////////////////////////////
+
+    //////////////////////////////////////////////////////
 
 @PostMapping("/tranca")
     public Tranca postTranca(@RequestBody Tranca trc){
